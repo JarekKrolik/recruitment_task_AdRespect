@@ -15,32 +15,55 @@
       -ms-flex-positive: 10;
           flex-grow: 10;
 }
+.navbar-brand:focus {
+  border: none;
+}
 
 .navbar-brand__span {
   font-weight: 900;
 }
 
+a.nav-link.dropdown-toggle {
+  color: black;
+}
+
 .dropdown-toggle::after {
   display: none;
+  border: none;
 }
 
 .nav-link {
   position: relative;
   color: black;
   margin: 0 1em;
+  border-radius: 15px;
+}
+.nav-link:hover {
+  color: black;
+}
+.nav-link:focus {
+  border: none;
+  -webkit-box-shadow: 3px 3px 7px black;
+          box-shadow: 3px 3px 7px black;
+}
+.nav-link:focus::after {
+  display: none;
 }
 
 .nav-link::after {
   display: block;
-  content: "";
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 50%;
+  content: "";
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 0;
-  height: 3px;
+  height: 2px;
   background-color: black;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  border-radius: 20%;
+  -webkit-transition: width 0.4s;
+  transition: width 0.4s;
 }
 
 .nav-link:hover::after {
@@ -90,4 +113,48 @@ nav .navbar {
 .btn.search:focus {
   -webkit-box-shadow: 5px 5px 9px black;
           box-shadow: 5px 5px 9px black;
+}
+
+.dropdown-menu.show {
+  border: none;
+}
+
+a.dropdown-item {
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+  background-color: whitesmoke;
+  -webkit-animation: menu 0.4s both;
+          animation: menu 0.4s both;
+  -webkit-transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
+}
+a.dropdown-item:hover, a.dropdown-item:focus {
+  background-color: black;
+  color: whitesmoke;
+}
+
+@-webkit-keyframes menu {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px) scale(0.6);
+            transform: translateY(-30px) scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes menu {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px) scale(0.6);
+            transform: translateY(-30px) scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1);
+  }
 }/*# sourceMappingURL=main.css.map */
