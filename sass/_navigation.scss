@@ -28,6 +28,7 @@ a.nav-link.dropdown-toggle{
   }
   &:focus{
     border: none;
+    outline: none;
     box-shadow: 3px 3px 7px black;
     &::after{
         display: none;
