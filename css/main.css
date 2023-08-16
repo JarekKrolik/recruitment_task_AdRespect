@@ -1,26 +1,35 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 .navbar {
   max-width: 1262px;
   margin: 0 auto;
 }
+
 .navbar-brand {
-  flex-grow: 10;
+  -webkit-box-flex: 10;
+      -ms-flex-positive: 10;
+          flex-grow: 10;
 }
+
 .navbar-brand__span {
   font-weight: 900;
 }
+
 .dropdown-toggle::after {
   display: none;
 }
+
 .nav-link {
   position: relative;
   color: black;
   margin: 0 1em;
 }
+
 .nav-link::after {
   display: block;
   content: "";
@@ -30,37 +39,55 @@
   width: 0;
   height: 3px;
   background-color: black;
+  -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
 .nav-link:hover::after {
   width: 100%;
 }
+
 .magnifying-glass {
   cursor: pointer;
 }
+
 form.d-flex {
   width: 0;
   opacity: 0;
+  -webkit-transition: opacity 0.5s, width 0.5s;
   transition: opacity 0.5s, width 0.5s;
 }
+
 form.d-flex.on {
   width: 350px;
   opacity: 1;
 }
+
 nav .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .form-control:focus {
-  box-shadow: 5px 5px 9px black;
+  -webkit-box-shadow: 5px 5px 9px black;
+          box-shadow: 5px 5px 9px black;
   border: none;
 }
+
 .btn.search {
   border: 1px solid black;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
   transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
 }
+
 .btn.search:hover,
 .btn.search:focus {
-  box-shadow: 5px 5px 9px black;
-}
+  -webkit-box-shadow: 5px 5px 9px black;
+          box-shadow: 5px 5px 9px black;
+}/*# sourceMappingURL=main.css.map */
