@@ -6,12 +6,19 @@
         position: absolute;
         top: 0;
         left: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
         transition: left 0.3s;
         &.right{
         left: 0;
         }
         &.left{
         left: 100%;
+        }
+        img{
+            width: 100%;
         }
     }
     &__buttons{
@@ -90,4 +97,96 @@
             }
         }
     }
+}
+@media (min-width: 1024px){
+.hero-block{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    overflow: hidden;
+    width: 100%;
+    &__picture{
+        position: initial;
+        width: 50%;
+        height: 95vh;
+        &.right{
+        left: 0;
+        }
+        &.left{
+        left: 100%;
+        }
+        img{
+            height: 100%;
+        }
+    }
+    &__buttons{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        right: 0;
+        bottom: 0;
+        background-color: #F5F0EC;
+    }
+    &__button{
+        color: black;
+        font-size: 32px;
+        font-weight: bolder;
+        padding: 0.7em;
+        cursor: pointer;
+        }
+    &__text{
+        width: 50%;
+        &.right{
+         transform: translateX(0);
+        }
+        &.left{
+         transform: translateX(-100%);
+        }
+        &-header{
+            text-align: left;
+            font-size: 34px;
+        }
+        &-paragraph{
+            text-align: left;
+            font-size: 17px;   
+        }
+        &-buttons{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2em;
+             button{
+                margin: 1em auto;
+                border: none;
+                padding: 12px 24px 14px 24px;
+                border-radius: 20px;
+                transition: color 0.3s,background-color 0.3s,box-shadow 0.3s;
+            }
+            .first{
+                background-color:#1B5B31;
+                color:#F5F0EC;
+             &:hover,&:focus{
+                outline: none;
+                color:#1B5B31;
+                background-color:#F5F0EC;
+                box-shadow: 3px 3px 7px black;
+             }
+            }
+            .second{
+                margin: 1em auto;
+                border: 1px solid #1B5B31;
+                color: #1B5B31;
+                background-color: transparent;
+                 &:hover,&:focus{
+                outline: none;
+                color:#F5F0EC;
+                background-color:#1B5B31 ;
+                box-shadow: 3px 3px 7px black;
+             }
+            }
+        }
+    }
+}
 }
