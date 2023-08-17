@@ -3,7 +3,6 @@
   margin: 0 auto;
 }
 .navbar-brand {
-  flex-grow: 10;
   &:focus{
     border: none;
   }
@@ -22,6 +21,7 @@ a.nav-link.dropdown-toggle{
   position: relative;
   color: black;
   margin: 0 1em;
+  padding: 0.5em 1em;
   border-radius: 15px;
   &:hover{
     color: black;
@@ -52,24 +52,23 @@ a.nav-link.dropdown-toggle{
   width: 100%;
 }
 .magnifying-glass {
-  cursor: pointer;
+  display: none;
 }
 form.d-flex {
-  width: 0;
-  opacity: 0;
-  transition: opacity 0.5s, width 0.5s;
-}
-form.d-flex.on {
-  width: 350px;
-  opacity: 1;
+  width: auto;
 }
 nav .navbar {
   display: flex;
   justify-content: space-between;
 }
-.form-control:focus {
+.form-control{
+  input{
+  margin-top: 1em;
+  }
+  &:focus{
   box-shadow: 5px 5px 9px black;
   border: none;
+  }
 }
 .btn.search {
   border: 1px solid black;
@@ -92,4 +91,22 @@ a.dropdown-item{
         background-color: black;
         color: whitesmoke;
     }
+}
+@media(min-width: 1200px) {
+  .navbar-brand {
+  flex-grow: 10;
+}
+.magnifying-glass {
+  display: block;
+  cursor: pointer;
+}
+form.d-flex {
+  width: 0;
+  opacity: 0;
+  transition: opacity 0.5s, width 0.5s;
+}
+form.d-flex.on {
+  width: 350px;
+  opacity: 1;
+}
 }
