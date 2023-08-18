@@ -6,7 +6,10 @@
 }
 
 .navbar {
+  position: relative;
+  z-index: 5;
   max-width: 1262px;
+  height: 72px;
   margin: 0 auto;
 }
 
@@ -107,6 +110,14 @@ nav .navbar {
           box-shadow: 5px 5px 9px black;
 }
 
+.navbar-collapse {
+  border: none;
+  border-radius: 14px;
+  background-color: white;
+  padding: 0.6em;
+  margin-top: 0.7em;
+}
+
 .dropdown-menu.show {
   border: none;
 }
@@ -170,6 +181,46 @@ a.dropdown-item:hover, a.dropdown-item:focus {
             transform: translateY(0) scale(1);
   }
 }
+@-webkit-keyframes arrow {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+@keyframes arrow {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+@-webkit-keyframes arrows {
+  0% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 20px black;
+            box-shadow: 0 0 20px black;
+  }
+}
+@keyframes arrows {
+  0% {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 20px black;
+            box-shadow: 0 0 20px black;
+  }
+}
 .hero-block {
   position: relative;
   overflow: hidden;
@@ -179,6 +230,7 @@ a.dropdown-item:hover, a.dropdown-item:focus {
   position: absolute;
   top: 0;
   left: 100%;
+  height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -188,18 +240,18 @@ a.dropdown-item:hover, a.dropdown-item:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-image: url("../pictures/green-3851975_1280.jpg");
+  background-position: center;
+  background-size: cover;
   width: 100%;
-  -webkit-transition: left 0.3s;
-  transition: left 0.3s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 .hero-block__picture.right {
   left: 0;
 }
 .hero-block__picture.left {
   left: 100%;
-}
-.hero-block__picture img {
-  width: 100%;
 }
 .hero-block__buttons {
   position: absolute;
@@ -215,6 +267,8 @@ a.dropdown-item:hover, a.dropdown-item:focus {
   right: 0;
   bottom: 0;
   background-color: #F5F0EC;
+  -webkit-animation: arrows 2s infinite alternate both;
+          animation: arrows 2s infinite alternate both;
 }
 .hero-block__button {
   color: black;
@@ -222,6 +276,8 @@ a.dropdown-item:hover, a.dropdown-item:focus {
   font-weight: bolder;
   padding: 0.7em;
   cursor: pointer;
+  -webkit-animation: arrow 2s infinite alternate;
+          animation: arrow 2s infinite alternate;
 }
 .hero-block__text {
   display: -webkit-box;
@@ -237,10 +293,8 @@ a.dropdown-item:hover, a.dropdown-item:focus {
   width: 100%;
   padding: 2em;
   background-color: #DCC1AB;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 .hero-block__text.right {
   -webkit-transform: translateX(0);
@@ -321,55 +375,37 @@ a.dropdown-item:hover, a.dropdown-item:focus {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
-    overflow: hidden;
     width: 100%;
   }
   .hero-block__picture {
-    position: initial;
+    height: 90vh;
     width: 50%;
-    height: 95vh;
   }
   .hero-block__picture.right {
-    left: 0;
-  }
-  .hero-block__picture.left {
+    position: absolute;
+    top: 0;
     left: 100%;
   }
-  .hero-block__picture img {
-    height: 100%;
-  }
-  .hero-block__buttons {
-    position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    right: 0;
-    bottom: 0;
-    background-color: #F5F0EC;
+  .hero-block__picture.left {
+    position: initial;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   .hero-block__button {
-    color: black;
     font-size: 32px;
-    font-weight: bolder;
-    padding: 0.7em;
-    cursor: pointer;
   }
   .hero-block__text {
-    width: 50%;
+    height: 90vh;
   }
   .hero-block__text.right {
+    width: 50%;
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
   .hero-block__text.left {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    width: 100%;
   }
   .hero-block__text-header {
     text-align: left;
@@ -380,17 +416,13 @@ a.dropdown-item:hover, a.dropdown-item:focus {
     font-size: 17px;
   }
   .hero-block__text-buttons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 2em;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .hero-block__text-buttons button {
     margin: 1em auto;
@@ -403,27 +435,9 @@ a.dropdown-item:hover, a.dropdown-item:focus {
     transition: color 0.3s, background-color 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
   }
   .hero-block__text-buttons .first {
-    background-color: #1B5B31;
-    color: #F5F0EC;
-  }
-  .hero-block__text-buttons .first:hover, .hero-block__text-buttons .first:focus {
-    outline: none;
-    color: #1B5B31;
-    background-color: #F5F0EC;
-    -webkit-box-shadow: 3px 3px 7px black;
-            box-shadow: 3px 3px 7px black;
+    margin-right: 18px;
   }
   .hero-block__text-buttons .second {
-    margin: 1em auto;
-    border: 1px solid #1B5B31;
-    color: #1B5B31;
-    background-color: transparent;
-  }
-  .hero-block__text-buttons .second:hover, .hero-block__text-buttons .second:focus {
-    outline: none;
-    color: #F5F0EC;
-    background-color: #1B5B31;
-    -webkit-box-shadow: 3px 3px 7px black;
-            box-shadow: 3px 3px 7px black;
+    margin-left: 18px;
   }
 }/*# sourceMappingURL=main.css.map */

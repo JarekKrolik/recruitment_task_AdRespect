@@ -1,7 +1,11 @@
 .navbar {
+  position: relative;
+  z-index: 5;
   max-width: 1262px;
+  height: 72px;
   margin: 0 auto;
 }
+
 .navbar-brand {
   &:focus{
     border: none;
@@ -77,6 +81,13 @@ nav .navbar {
 .btn.search:hover,
 .btn.search:focus {
   box-shadow: 5px 5px 9px black;
+}
+.navbar-collapse{
+  border: none;
+  border-radius: 14px;
+  background-color: white;
+  padding: 0.6em;
+  margin-top: 0.7em;
 }
 .dropdown-menu.show{
     border: none;
