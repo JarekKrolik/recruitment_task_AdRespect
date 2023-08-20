@@ -4,18 +4,19 @@ const dropDownMenuElements = document.getElementsByClassName("dropdown-item");
 const heroButtons = document.querySelectorAll(".hero-block__button");
 const heroText = document.querySelector(".hero-block__text");
 const heroPicture = document.querySelector(".hero-block__picture");
-let heroSliderTimer = setInterval(heroSlider, 5000);
+// let heroSliderTimer = setInterval(heroSlider, 5000);
 let animationDelay = 0;
+AOS.init();
 magnifyingGlass.addEventListener("click", () => {
   searchForm.classList.toggle("on");
 });
 function heroSlider() {
-  clearInterval(heroSliderTimer);
+  // clearInterval(heroSliderTimer);
   heroText.classList.toggle("left");
   heroText.classList.toggle("right");
   heroPicture.classList.toggle("left");
   heroPicture.classList.toggle("right");
-  heroSliderTimer = setInterval(heroSlider, 8000);
+  // heroSliderTimer = setInterval(heroSlider, 8000);
 }
 const dropDownMenuDelayHandler = () => {
   animationDelay = 0;

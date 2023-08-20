@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+    scroll-margin-top: 80px;
+    scroll-behavior: smooth;
+}
 @import './navigation';
 @import './animations';
 @import './hero-block';
+@import './offer';

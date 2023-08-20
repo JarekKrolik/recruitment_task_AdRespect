@@ -6,7 +6,7 @@
         position: absolute;
         top: 0;
         left: 100%;
-        height: 90vh;
+        min-height: 90vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -62,18 +62,22 @@
         &-paragraph{
             text-align: center;
             font-family: 'Inter', sans-serif;
+            margin-top: 2em;
             font-size: 17px;   
         }
         &-buttons{
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-top: 2em;
             margin-bottom: 2em;
              button{
                 margin: 1em auto;
                 border: none;
                 padding: 12px 24px 14px 24px;
-                border-radius: 20px;
+                border-radius: 40px;
+                font-family: 'Inter', sans-serif;
+                font-size: 16px;
                 transition: color 0.3s,background-color 0.3s,box-shadow 0.3s;
             }
             .first{
@@ -109,7 +113,7 @@
     justify-content: start;
     width: 100%;
     &__picture{
-        height: 90vh;
+       min-height: 90vh;
         width: 50%;
         &.right{
         position: absolute;
@@ -125,7 +129,10 @@
         font-size: 32px;  
         }
     &__text{
-        height: 90vh;
+        min-height: 90vh;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0 5em 0 3em;
         &.right{
          width: 50%;
          transform: translateX(0);
@@ -136,11 +143,12 @@
         }
         &-header{
             text-align: left;
-            font-size: 34px;
+            font-size: 50px;
         }
         &-paragraph{
             text-align: left;
-            font-size: 17px;   
+            font-size: 16px;
+            padding: 0 6em 0 0;   
         }
         &-buttons{
             flex-direction: row;
@@ -158,6 +166,15 @@
             .second{
                 margin-left: 18px;
             }
+        }
+    }
+}
+}
+@media (min-width: 1200px){
+.hero-block{
+    &__text{
+        &-header{
+            font-size: 60px;
         }
     }
 }

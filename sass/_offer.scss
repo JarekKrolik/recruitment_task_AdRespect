@@ -1,0 +1,53 @@
+.offer{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: #F5F0EC;
+    &__description{
+        padding: 1em;
+        margin-top: 0.5em;
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+        &-title{
+        font-size: 17px;
+        }
+        &-headline{
+        font-family: 'Montserrat', sans-serif;
+        }
+    }
+    .pencil{
+        display: flex;
+        padding: 2em 2em 0 2em;
+        .bi-pencil-fill{
+        transform: rotateX(180deg);
+        transform: rotateY(180deg);
+        font-size: 26px;
+        }
+        .bi-star-fill{
+            font-size: 8px;
+        }
+    }
+    .card{
+        width: 96%;
+        border-radius: 12px;
+        margin: 0.5em auto;
+        box-shadow: 5px 5px 12px black;
+        &-body{
+            text-align: center;
+        }
+        &-text{
+            font-size: 16px;
+        }
+        &-title{
+            margin-bottom: 1em;
+        }
+        &-text--read-more{
+            display: inline-block;
+            border-bottom: #1B5B31 1px solid;
+            color: #1B5B31;
+            padding: 0.6em;
+            cursor: pointer;
+        }
+    }
+}
