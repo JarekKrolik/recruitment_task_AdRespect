@@ -4,7 +4,7 @@
     justify-content: start;
     align-items: center;
     min-height: 100vh;
-    background-color: #F5F0EC;
+    background-color: $sectionBackground;
     &__description{
         padding: 1em;
         margin-top: 0.5em;
@@ -43,7 +43,7 @@
         width: 96%;
         border-radius: 12px;
         margin: 0.5em auto;
-        box-shadow: 5px 5px 12px black;
+        box-shadow: 5px 5px 12px $fontBlack;
         &-body{
             text-align: center;
         }
@@ -55,8 +55,8 @@
         }
         &-text--read-more{
             display: inline-block;
-            border-bottom: #1B5B31 1px solid;
-            color: #1B5B31;
+            border-bottom: $mainGreen 1px solid;
+            color: $mainGreen;
             padding: 0.6em;
             cursor: pointer;
         }

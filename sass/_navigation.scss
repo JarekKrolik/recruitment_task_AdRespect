@@ -14,7 +14,7 @@
   font-weight: 900;
 }
 a.nav-link.dropdown-toggle{
-    color: black;
+    color: $fontBlack;
 }
 .dropdown-toggle::after {
   display: none;
@@ -22,17 +22,17 @@ a.nav-link.dropdown-toggle{
 }
 .nav-link {
   position: relative;
-  color: black;
+  color: $fontBlack;
   margin: 0 1em;
   padding: 0.5em 1em;
   border-radius: 15px;
   &:hover{
-    color: black;
+    color: $fontBlack;
   }
   &:focus{
     border: none;
     outline: none;
-    box-shadow: 3px 3px 7px black;
+    box-shadow: 3px 3px 7px $fontBlack;
     &::after{
         display: none;
     }
@@ -47,7 +47,7 @@ a.nav-link.dropdown-toggle{
   transform: translateX(-50%);
   width: 0;
   height: 2px;
-  background-color: black;
+  background-color: $fontBlack;
   border-radius: 20%;
   transition: width 0.4s;
 }
@@ -69,22 +69,22 @@ nav .navbar {
   margin-top: 1em;
   }
   &:focus{
-  box-shadow: 5px 5px 9px black;
+  box-shadow: 5px 5px 9px $fontBlack;
   border: none;
   }
 }
 .btn.search {
-  border: 1px solid black;
+  border: 1px solid $fontBlack;
   transition: box-shadow 0.3s;
 }
 .btn.search:hover,
 .btn.search:focus {
-  box-shadow: 5px 5px 9px black;
+  box-shadow: 5px 5px 9px $fontBlack;
 }
 .navbar-collapse{
   border: none;
   border-radius: 14px;
-  background-color: white;
+  background-color: $mainWhite;
   padding: 0.6em;
   margin-top: 0.7em;
 }
@@ -94,12 +94,12 @@ nav .navbar {
 a.dropdown-item{
     border-radius: 15px;
     margin-bottom: 0.5rem;
-    background-color: whitesmoke;
+    background-color: $mainBackgroundColor;
     animation: menu 0.4s both;
     transition: color 0.3s,background-color 0.3s;
     &:hover,&:focus{
-        background-color: black;
-        color: whitesmoke;
+        background-color: $fontBlack;
+        color: $mainBackgroundColor;
     }
 }
 @media(min-width: 768px){
