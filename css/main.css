@@ -640,6 +640,7 @@ a.dropdown-item:hover, a.dropdown-item:focus {
   .offer__description {
     text-align: left;
     width: 1040px;
+    padding: 0;
   }
   .offer__description-title {
     font-size: 12px;
