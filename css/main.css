@@ -141,6 +141,39 @@ a.dropdown-item:hover, a.dropdown-item:focus {
   color: whitesmoke;
 }
 
+@media (min-width: 768px) {
+  .navbar-brand, .navbar-brand__span {
+    font-size: 30px;
+  }
+  .navbar-toggler-icon {
+    width: 45px;
+    height: 45px;
+  }
+  .nav-link {
+    font-size: 22px;
+  }
+  .form-control {
+    font-size: 24px;
+  }
+  .btn.search {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1024px) {
+  .navbar-brand, .navbar-brand__span {
+    font-size: 26px;
+  }
+  .navbar-toggler-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .nav-link {
+    font-size: 14px;
+  }
+  .form-control, .btn.search {
+    font-size: 14px;
+  }
+}
 @media (min-width: 1200px) {
   .navbar-brand {
     -webkit-box-flex: 10;
@@ -371,6 +404,17 @@ a.dropdown-item:hover, a.dropdown-item:focus {
           box-shadow: 3px 3px 7px black;
 }
 
+@media (min-width: 768px) {
+  .hero-block__button {
+    font-size: 32px;
+  }
+  .hero-block__text-header {
+    font-size: 54px;
+  }
+  .hero-block__text-paragraph, .hero-block__text-buttons {
+    font-size: 26px;
+  }
+}
 @media (min-width: 1024px) {
   .hero-block {
     position: relative;
@@ -477,6 +521,7 @@ a.dropdown-item:hover, a.dropdown-item:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-height: 100vh;
   background-color: #F5F0EC;
 }
 .offer__description {
@@ -491,20 +536,30 @@ a.dropdown-item:hover, a.dropdown-item:focus {
 .offer__description-headline {
   font-family: "Montserrat", sans-serif;
 }
-.offer .pencil {
+.offer__description-headline span {
+  font-style: italic;
+}
+.offer__cards {
+  width: 98%;
+}
+.offer .single-icon {
+  font-size: 26px;
+  padding: 1em 2em 0 2em;
+}
+.offer .double-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 2em 2em 0 2em;
 }
-.offer .pencil .bi-pencil-fill {
+.offer .double-icon .bi-pencil-fill {
   -webkit-transform: rotateX(180deg);
           transform: rotateX(180deg);
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
   font-size: 26px;
 }
-.offer .pencil .bi-star-fill {
+.offer .double-icon .bi-star-fill {
   font-size: 8px;
 }
 .offer .card {
@@ -529,4 +584,119 @@ a.dropdown-item:hover, a.dropdown-item:focus {
   color: #1B5B31;
   padding: 0.6em;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .offer {
+    padding-top: 2em;
+  }
+  .offer__description-title {
+    font-size: 28px;
+  }
+  .offer__description-headline {
+    font-size: 40px;
+  }
+  .offer__description-description {
+    font-size: 22px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  .offer .single-icon {
+    font-size: 32px;
+  }
+  .offer .double-icon .bi-pencil-fill {
+    font-size: 28px;
+  }
+  .offer .double-icon .bi-star-fill {
+    font-size: 14px;
+  }
+  .offer .col {
+    margin: 2em auto;
+    padding: 0.6em;
+  }
+  .offer .card {
+    margin: 1em auto;
+  }
+  .offer .card-body {
+    text-align: left;
+  }
+  .offer .card-text {
+    font-size: 22px;
+  }
+  .offer .card-title {
+    font-size: 32px;
+  }
+  .offer .card-text--read-more {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1200px) {
+  .offer {
+    padding-bottom: 6em;
+  }
+  .offer__cards {
+    width: 85%;
+  }
+  .offer__description {
+    text-align: left;
+    width: 1040px;
+  }
+  .offer__description-title {
+    font-size: 12px;
+  }
+  .offer__description-headline {
+    font-size: 48px;
+  }
+  .offer__description-description {
+    font-size: 16px;
+    width: 60%;
+  }
+  .offer .single-icon {
+    font-size: 40px;
+    padding: 0.5em 1em;
+  }
+  .offer .double-icon {
+    padding: 2em 2em 1em;
+  }
+  .offer .double-icon .bi-pencil-fill {
+    padding: 0;
+    font-size: 30px;
+  }
+  .offer .double-icon .bi-star-fill {
+    font-size: 16px;
+  }
+  .offer .col {
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s;
+  }
+  .offer .col:hover {
+    -webkit-transform: scale(1.09);
+            transform: scale(1.09);
+  }
+  .offer .card {
+    margin: 1em auto;
+  }
+  .offer .card-body {
+    text-align: left;
+  }
+  .offer .card-text {
+    font-size: 14px;
+  }
+  .offer .card-title {
+    font-size: 28px;
+  }
+  .offer .card-text--read-more {
+    font-size: 16px;
+    margin-top: 2em;
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s;
+  }
+  .offer .card-text--read-more:hover {
+    -webkit-transform: scale(1.09);
+            transform: scale(1.09);
+  }
 }/*# sourceMappingURL=main.css.map */
