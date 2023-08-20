@@ -11,8 +11,10 @@
         justify-content: center;
         align-items: center;
         background-image: url('../pictures/green-3851975_1280.jpg');
+        background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        background-attachment: fixed;
         width: 100%;
         transition:  0.4s;
         &.right{
@@ -128,7 +130,7 @@
     justify-content: start;
     width: 100%;
     &__picture{
-       min-height: 90vh;
+        min-height: 90vh;
         width: 50%;
         &.right{
         position: absolute;

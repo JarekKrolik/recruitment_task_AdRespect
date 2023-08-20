@@ -279,8 +279,10 @@ a.dropdown-item:hover, a.dropdown-item:focus {
       -ms-flex-align: center;
           align-items: center;
   background-image: url("../pictures/green-3851975_1280.jpg");
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   width: 100%;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -696,8 +698,161 @@ a.dropdown-item:hover, a.dropdown-item:focus {
     transition: transform 0.4s;
     transition: transform 0.4s, -webkit-transform 0.4s;
   }
-  .offer .card-text--read-more:hover {
+  .offer .card-text--read-more:hover, .offer .card-text--read-more:focus {
     -webkit-transform: scale(1.09);
             transform: scale(1.09);
+    outline: none;
+  }
+}
+.about {
+  position: relative;
+  overflow: hidden;
+  min-height: 90vh;
+  width: 96%;
+  border-radius: 12px;
+  -webkit-box-shadow: 5px 5px 12px #000000;
+          box-shadow: 5px 5px 12px #000000;
+  margin: 3em auto;
+  background-image: url("../pictures/flowers-4139197_1280.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.about__shade {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(27, 91, 49, 0.8);
+}
+.about__text {
+  position: relative;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #F5F0EC;
+  padding: 2em;
+  margin-top: 2em;
+  text-align: center;
+}
+.about__text-header {
+  font-size: 28px;
+}
+.about__text-header span {
+  font-style: italic;
+}
+.about__text-title {
+  font-size: 20px;
+}
+.about__text-paragraph {
+  margin: 2em 0;
+  font-size: 18px;
+}
+.about__text-button {
+  display: block;
+  margin: 1em auto;
+  border: none;
+  padding: 12px 24px 14px 24px;
+  border-radius: 40px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  border: 1px solid #F5F0EC;
+  color: #F5F0EC;
+  background-color: #1B5B31;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+}
+.about__text-button:hover, .about__text-button:focus {
+  outline: none;
+  background-color: #F5F0EC;
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about__text-header {
+    font-size: 40px;
+  }
+  .about__text-title {
+    font-size: 28px;
+  }
+  .about__text-paragraph {
+    font-size: 22px;
+  }
+  .about__text-button {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  .about {
+    position: relative;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    height: 100vh;
+    width: 100%;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin: 0 auto;
+    background-image: none;
+  }
+  .about__shade {
+    display: none;
+  }
+  .about__text {
+    width: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    background-color: #1B5B31;
+    margin: 0;
+    padding: 0 3em 0 8em;
+  }
+  .about__text-header {
+    font-size: 48px;
+  }
+  .about__text-title {
+    font-size: 12px;
+  }
+  .about__text-paragraph {
+    font-size: 16px;
+    text-align: left;
+  }
+  .about__text-button {
+    font-size: 16px;
+  }
+  .about__picture {
+    width: 50%;
+    background-image: url("../pictures/flowers-4139197_1280.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
   }
 }/*# sourceMappingURL=main.css.map */
