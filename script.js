@@ -11,7 +11,6 @@ const projectsGallery = document.querySelector(".projects__pictures");
 const projectAllPictures = document.querySelectorAll(".projects__picture");
 const carousel = document.querySelector(".carousel");
 const carouselOffBtn = document.querySelector(".carousel__exit-btn");
-// let heroSliderTimer = setInterval(heroSlider, 5000);
 let animationDelay = 0;
 AOS.init();
 magnifyingGlass.addEventListener("click", () => {
@@ -38,19 +37,19 @@ const fogOffHandler = () => {
   });
 };
 const projectsPicturesPopUpHandler = () => {
-  fogOffHandler();
+  if (!fogOnButton.classList.contains("fog-off")) {
+    fogOffHandler();
+  }
   projectsGallery.classList.toggle("pictures-off");
   carousel.classList.toggle("pictures-off");
   fogOnButton.classList.toggle("fog-off");
 };
 
 function heroSlider() {
-  // clearInterval(heroSliderTimer);
   heroText.classList.toggle("left");
   heroText.classList.toggle("right");
   heroPicture.classList.toggle("left");
   heroPicture.classList.toggle("right");
-  // heroSliderTimer = setInterval(heroSlider, 8000);
 }
 const dropDownMenuDelayHandler = () => {
   animationDelay = 0;
