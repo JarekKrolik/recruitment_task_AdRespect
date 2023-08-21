@@ -10,7 +10,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url('../pictures/green-3851975_1280.jpg');
+        background-image: url('../pictures/small/behzad-ghaffarian-4VG9xeNR6M8-unsplash\ \(1\).jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -132,6 +132,7 @@
     &__picture{
         min-height: 90vh;
         width: 50%;
+        background-image: url('../pictures/big/behzad-ghaffarian-4VG9xeNR6M8-unsplash.jpg');
         &.right{
         position: absolute;
         top: 0;
