@@ -9,7 +9,7 @@
     }
 }
 @keyframes arrow {
-    0%{
+    0% {
         transform: scale(1);
     }
     100% {
@@ -17,10 +17,10 @@
     }
 }
 @keyframes arrows {
-    0%{
+    0% {
         box-shadow: none;
     }
-    100%{
+    100% {
         box-shadow: 0 0 20px black;
     }
 }

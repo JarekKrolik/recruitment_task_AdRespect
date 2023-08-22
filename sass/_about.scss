@@ -1,4 +1,4 @@
-.about{
+.about {
     position: relative;
     overflow: hidden;
     min-height: 90vh;
@@ -6,18 +6,18 @@
     border-radius: 12px;
     box-shadow: 5px 5px 12px $fontBlack;
     margin: 3em auto;
-    background-image: url('../pictures/small/albert-vincent-wu-rW0vWDdAUBU-unsplash\ \(2\).jpg');
+    background-image: url("../pictures/small/albert-vincent-wu-rW0vWDdAUBU-unsplash\ \(2\).jpg");
     background-position: center;
     background-size: cover;
-    &__shade{
+    &__shade {
         position: absolute;
         left: 0;
         top: 0;
         height: 100%;
         width: 100%;
-        background-color: rgba(27,91,49,0.8);
+        background-color: rgba(27, 91, 49, 0.8);
     }
-    &__text{
+    &__text {
         position: relative;
         z-index: 3;
         display: flex;
@@ -27,102 +27,106 @@
         padding: 2em;
         margin-top: 2em;
         text-align: center;
-        &-header{
+        &-header {
             font-size: 28px;
-            span{
-            font-style: italic;}
+            span {
+                font-style: italic;
+            }
         }
-        &-title{
+        &-title {
             font-size: 20px;
         }
-        &-paragraph{
+        &-paragraph {
             margin: 2em 0;
             font-size: 18px;
         }
-        &-button{
+        &-button {
             display: block;
-              margin: 1em auto;
-              border: none;
-              padding: 12px 24px 14px 24px;
-              border-radius: 40px;
-              font-family: 'Inter', sans-serif;
-              font-size: 16px;
-              border: 1px solid $sectionBackground;
-              color: $sectionBackground;
-              background-color: $mainGreen;
-              transition: background-color 0.3s,color 0.3s;
-              &:hover,&:focus{
+            margin: 1em auto;
+            border: none;
+            padding: 12px 24px 14px 24px;
+            border-radius: 40px;
+            font-family: "Inter", sans-serif;
+            font-size: 16px;
+            border: 1px solid $sectionBackground;
+            color: $sectionBackground;
+            background-color: $mainGreen;
+            transition:
+                background-color 0.3s,
+                color 0.3s;
+            &:hover,
+            &:focus {
                 outline: none;
                 background-color: $sectionBackground;
                 color: $fontBlack;
-              }
+            }
         }
     }
 }
-@media(min-width: 768px){
- .about{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-    &__text{
-        &-header{
-            font-size: 40px;
-        }
-        &-title{
-            font-size: 28px;
-        }
-        &-paragraph{
-        font-size: 22px;
-        }
-        &-button{
-        font-size: 18px;
-        }
-    }
-}   
-}
-@media(min-width: 1200px){
-    .about{
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: stretch;
-    height: 100vh;
-    width: 100%;
-    border-radius: 0;
-    box-shadow: none;
-    margin: 0 auto;
-    background-image: none;
-    &__shade{
-      display: none;
-    }
-    &__text{
-        width: 50%;
+@media (min-width: 768px) {
+    .about {
+        display: flex;
         justify-content: center;
-        text-align: left;
-        align-items: start;
-        background-color: $mainGreen;
-        margin: 0;
-        padding: 0 3em 0 8em;
-        &-header{
-            font-size: 48px;
+        align-items: center;
+        &__text {
+            &-header {
+                font-size: 40px;
+            }
+            &-title {
+                font-size: 28px;
+            }
+            &-paragraph {
+                font-size: 22px;
+            }
+            &-button {
+                font-size: 18px;
+            }
         }
-        &-title{
-            font-size: 12px;
-        }
-        &-paragraph{
-            font-size: 16px;
-            text-align: left;
-        }
-        &-button{
-            font-size: 16px;
-        }
-    }
-    &__picture{
-        width: 50%;
-        background-image: url('../pictures/big/albert-vincent-wu-rW0vWDdAUBU-unsplash\ \(1\).jpg');
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
     }
 }
+@media (min-width: 1200px) {
+    .about {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: stretch;
+        height: 100vh;
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+        margin: 0 auto;
+        background-image: none;
+        &__shade {
+            display: none;
+        }
+        &__text {
+            width: 50%;
+            justify-content: center;
+            text-align: left;
+            align-items: start;
+            background-color: $mainGreen;
+            margin: 0;
+            padding: 0 3em 0 8em;
+            &-header {
+                font-size: 48px;
+            }
+            &-title {
+                font-size: 12px;
+            }
+            &-paragraph {
+                font-size: 16px;
+                text-align: left;
+            }
+            &-button {
+                font-size: 16px;
+            }
+        }
+        &__picture {
+            width: 50%;
+            background-image: url("../pictures/big/albert-vincent-wu-rW0vWDdAUBU-unsplash\ \(1\).jpg");
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    }
 }

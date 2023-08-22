@@ -1,4 +1,4 @@
-.offer{
+.offer {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -6,55 +6,55 @@
     min-height: 100vh;
     background-color: $sectionBackground;
     color: $fontBlackish;
-    &__description{
+    &__description {
         padding: 1em;
         margin-top: 0.5em;
         text-align: center;
-        font-family: 'Inter', sans-serif;
-        &-title{
-        font-size: 17px;
+        font-family: "Inter", sans-serif;
+        &-title {
+            font-size: 17px;
         }
-        &-headline{
-        font-family: 'Montserrat', sans-serif;
-        span{
-            font-style: italic;
-        }
+        &-headline {
+            font-family: "Montserrat", sans-serif;
+            span {
+                font-style: italic;
+            }
         }
     }
-    &__cards{
+    &__cards {
         width: 98%;
     }
-    .single-icon{
+    .single-icon {
         font-size: 26px;
-        padding: 1em 2em 0 2em ;
+        padding: 1em 2em 0 2em;
     }
-    .double-icon{
+    .double-icon {
         display: flex;
         padding: 2em 2em 0 2em;
-        .bi-pencil-fill{
-        transform: rotateX(180deg);
-        transform: rotateY(180deg);
-        font-size: 26px;
+        .bi-pencil-fill {
+            transform: rotateX(180deg);
+            transform: rotateY(180deg);
+            font-size: 26px;
         }
-        .bi-star-fill{
+        .bi-star-fill {
             font-size: 8px;
         }
     }
-    .card{
+    .card {
         width: 96%;
         border-radius: 12px;
         margin: 0.5em auto;
         box-shadow: 5px 5px 12px $fontBlack;
-        &-body{
+        &-body {
             text-align: center;
         }
-        &-text{
+        &-text {
             font-size: 16px;
         }
-        &-title{
+        &-title {
             margin-bottom: 1em;
         }
-        &-text--read-more{
+        &-text--read-more {
             display: inline-block;
             border-bottom: $mainGreen 1px solid;
             color: $mainGreen;
@@ -63,115 +63,116 @@
         }
     }
 }
-@media(min-width: 768px){
-    .offer{
+@media (min-width: 768px) {
+    .offer {
         padding-top: 2em;
-    &__description{
-        &-title{
-        font-size: 28px;
+        &__description {
+            &-title {
+                font-size: 28px;
+            }
+            &-headline {
+                font-size: 40px;
+            }
+            &-description {
+                font-size: 22px;
+                margin-top: 2em;
+                margin-bottom: 2em;
+            }
         }
-        &-headline{
-        font-size: 40px;
-        }
-        &-description{
-        font-size: 22px;
-        margin-top: 2em;
-        margin-bottom: 2em;
-        }
-    }
-    .single-icon{
-        font-size: 32px;
-    }
-    .double-icon{
-        .bi-pencil-fill{
-        font-size: 28px;
-        }
-        .bi-star-fill{
-            font-size: 14px;
-        }
-    }
-    .col{
-        margin: 2em auto;
-        padding: 0.6em;
-    }
-    .card{
-        margin: 1em auto;
-        &-body{
-            text-align: left;
-        }
-        &-text{
-            font-size: 22px;
-        }
-        &-title{
+        .single-icon {
             font-size: 32px;
         }
-        &-text--read-more{
-          font-size: 22px;
+        .double-icon {
+            .bi-pencil-fill {
+                font-size: 28px;
+            }
+            .bi-star-fill {
+                font-size: 14px;
+            }
+        }
+        .col {
+            margin: 2em auto;
+            padding: 0.6em;
+        }
+        .card {
+            margin: 1em auto;
+            &-body {
+                text-align: left;
+            }
+            &-text {
+                font-size: 22px;
+            }
+            &-title {
+                font-size: 32px;
+            }
+            &-text--read-more {
+                font-size: 22px;
+            }
         }
     }
 }
-}
-@media(min-width: 1200px){
- .offer{
-    padding-bottom: 6em;
-    &__cards{
-        width: 85%;
-    }
-    &__description{
-        text-align: left;
-        width: 1040px;
-        padding: 0;
-        &-title{
-        font-size: 12px;
+@media (min-width: 1200px) {
+    .offer {
+        padding-bottom: 6em;
+        &__cards {
+            width: 85%;
         }
-        &-headline{
-        font-size: 48px;
-        }
-        &-description{
-        font-size: 16px;
-        width: 60%;
-        }
-    }
-    .single-icon{
-        font-size: 40px;
-        padding: 0.5em 1em;
-    }
-    .double-icon{
-        padding: 2em 2em 1em;
-        .bi-pencil-fill{
-        padding: 0;
-        font-size: 30px;
-        }
-        .bi-star-fill{
-            font-size: 16px;
-        }
-    }
-    .col{
-        transition: transform 0.4s;
-        &:hover{
-            transform: scale(1.09);
-        }
-    }
-    .card{
-        margin: 1em auto;
-        &-body{
+        &__description {
             text-align: left;
+            width: 1040px;
+            padding: 0;
+            &-title {
+                font-size: 12px;
+            }
+            &-headline {
+                font-size: 48px;
+            }
+            &-description {
+                font-size: 16px;
+                width: 60%;
+            }
         }
-        &-text{
-            font-size: 14px;
+        .single-icon {
+            font-size: 40px;
+            padding: 0.5em 1em;
         }
-        &-title{
-            font-size: 28px;
+        .double-icon {
+            padding: 2em 2em 1em;
+            .bi-pencil-fill {
+                padding: 0;
+                font-size: 30px;
+            }
+            .bi-star-fill {
+                font-size: 16px;
+            }
         }
-        &-text--read-more{
-          font-size: 16px;
-          margin-top: 2em;
-          transition: transform 0.4s;
-          &:hover,&:focus{
-           transform: scale(1.09);
-           outline: none;
-          }
+        .col {
+            transition: transform 0.4s;
+            &:hover {
+                transform: scale(1.09);
+            }
+        }
+        .card {
+            margin: 1em auto;
+            &-body {
+                text-align: left;
+            }
+            &-text {
+                font-size: 14px;
+            }
+            &-title {
+                font-size: 28px;
+            }
+            &-text--read-more {
+                font-size: 16px;
+                margin-top: 2em;
+                transition: transform 0.4s;
+                &:hover,
+                &:focus {
+                    transform: scale(1.09);
+                    outline: none;
+                }
+            }
         }
     }
-}
 }

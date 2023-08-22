@@ -1,4 +1,4 @@
-.instagram{
+.instagram {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,83 +10,84 @@
     margin: 0 auto 2em;
     overflow: hidden;
     box-shadow: 5px 5px 12px $fontBlack;
-    &__box{
+    &__box {
         width: 90%;
         background-color: $mainGreen;
         padding: 2em;
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
         color: $sectionBackground;
         text-align: center;
     }
-    &__item-one{
+    &__item-one {
         font-size: 18px;
-        span{
-        font-family: 'Inter', sans-serif;
-        font-style: italic;
+        span {
+            font-family: "Inter", sans-serif;
+            font-style: italic;
         }
     }
-    &__item-two{
-        font-family: 'Inter', sans-serif;
+    &__item-two {
+        font-family: "Inter", sans-serif;
         font-size: 15px;
-        button{
-        display: block;
-        margin: 2em auto 1em;
-        background-color: $sectionBackground;
-        border: 1px solid $mainGreen;
-        color: $mainGreen;
-        padding: 0.5em 1em;
-        border-radius: 20px;
-        transition: 0.3s;
+        button {
+            display: block;
+            margin: 2em auto 1em;
+            background-color: $sectionBackground;
+            border: 1px solid $mainGreen;
+            color: $mainGreen;
+            padding: 0.5em 1em;
+            border-radius: 20px;
+            transition: 0.3s;
         }
     }
 }
-@media(min-width: 768px){
- .instagram{
-    &__item-one{
-        font-size: 36px;
-    }
-    &__item-two{
-        font-size: 22px;
-    }
-}   
-}
-@media(min-width: 1200px){
-    .instagram{
-    width: 100%;
-    border-radius:0;
-    margin: 0 auto;
-    box-shadow: none;
-    &__box{
-        display: flex;
-        text-align: left;
-        align-items: center;
-        justify-content: space-around;
-        width: 1040px;
-        padding: 120px 110px;
-        margin-top: 60px;
-        margin-bottom: 60px;
-    }
-    &__item-one{
-        font-size: 40px;
-        p{
-            margin: 0;
+@media (min-width: 768px) {
+    .instagram {
+        &__item-one {
+            font-size: 36px;
         }
-    }
-    &__item-two{
-        font-size: 16px;
-        p{
-            margin: 0;
-        }
-        button{
-        margin: 2em 0;
-        padding: 0.5em 1.5em;
-        &:hover,&:focus{
-        outline: none;
-        background-color: $mainGreen;
-        border: 1px solid $sectionBackground;
-        color: $sectionBackground;
-        }
+        &__item-two {
+            font-size: 22px;
         }
     }
 }
+@media (min-width: 1200px) {
+    .instagram {
+        width: 100%;
+        border-radius: 0;
+        margin: 0 auto;
+        box-shadow: none;
+        &__box {
+            display: flex;
+            text-align: left;
+            align-items: center;
+            justify-content: space-around;
+            width: 1040px;
+            padding: 120px 110px;
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+        &__item-one {
+            font-size: 40px;
+            p {
+                margin: 0;
+            }
+        }
+        &__item-two {
+            font-size: 16px;
+            p {
+                margin: 0;
+            }
+            button {
+                margin: 2em 0;
+                padding: 0.5em 1.5em;
+                &:hover,
+                &:focus {
+                    outline: none;
+                    background-color: $mainGreen;
+                    border: 1px solid $sectionBackground;
+                    color: $sectionBackground;
+                }
+            }
+        }
+    }
 }
