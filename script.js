@@ -11,7 +11,7 @@ const projectsGallery = document.querySelector(".projects__pictures");
 const projectAllPictures = document.querySelectorAll(".projects__picture");
 const carousel = document.querySelector(".carousel");
 const carouselOffBtn = document.querySelector(".carousel__exit-btn");
-currentYearDisplay = document.querySelector(".current-year");
+const currentYearDisplay = document.querySelector(".current-year");
 let animationDelay = 0;
 AOS.init();
 magnifyingGlass.addEventListener("click", () => {
