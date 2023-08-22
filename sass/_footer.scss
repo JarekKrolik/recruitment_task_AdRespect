@@ -1,0 +1,133 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    width: 100%;
+    background-color: $fontBlack;
+    color: $sectionBackground;
+    &__section-one{
+        font-family: 'Inter', sans-serif;
+        .box-one{
+            border-bottom: 1px solid $sectionBackground;
+            padding: 2em;
+            .logo{
+                font-size: 19px;
+            }
+            span{
+                font-weight: 900;
+            }
+            button{
+        display: block;
+        margin: 2em auto 1em;
+        background-color: $mainGreen;
+        border:none;
+        color: $sectionBackground;
+        padding: 0.5em 1em;
+        border-radius: 20px;
+            }
+        }
+        .box-two{
+            padding: 2em;
+            a{
+                text-decoration: none;
+                color: $sectionBackground;
+                padding: 0.5em;
+            }
+            p{
+                padding: 0.5em;
+            }
+        }
+    
+    }
+    &__section-two{
+           .logo{
+                font-size: 22px;
+                .ad{
+                    font-weight: 900;
+                }
+                .made{
+                    font-weight: normal;
+                    font-size: 16px;
+                    padding: 1em;
+                }
+            }
+    }
+}
+@media(min-width: 768px){
+    .footer{
+    &__section-one{
+        .box-one{
+            font-size: 24px;
+            .logo{
+            font-size: 26px;
+            }
+            button{
+            font-size: 17px;
+            }
+        }
+    }
+    &__section-two{
+        font-size: 22px;
+           .logo{
+                font-size: 26px;
+                .made{
+                    font-size: 16px;
+                }
+            }
+    }
+}
+}
+@media(min-width: 1200px){
+    .footer{
+    &__section-one{
+        width: 1040px;
+        .box-one{
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 2em 0;
+            p{
+                margin: 0;
+                font-size: 16px;
+            }
+            .logo{
+                margin-right: 335px;
+            }
+            button{
+                font-size: 16px;
+                padding: 0.5em 1.5em;
+                margin: 0;
+                margin-left: 50px;
+            }
+        }
+        .box-two{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: start;
+            font-size: 16px;
+            padding: 3em 0;
+            a{
+                &:first-child{
+                    padding-left: 0;
+                }
+            }
+            p{
+                margin: 0;
+                margin-left: 395px;
+            }
+        }
+    }
+    &__section-two{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 1040px;
+        font-size: 16px;
+    }
+}
+}
