@@ -36,10 +36,18 @@ const fogOffHandler = () => {
     e.classList.toggle("fog-off");
   });
 };
-const projectsPicturesPopUpHandler = () => {
+const projectsPicturesPopUpHandler = (e) => {
   if (!fogOnButton.classList.contains("fog-off")) {
     fogOffHandler();
   }
+  const chosenPicture = e.target.id;
+  const picturesInCarousel = document.querySelectorAll(".carousel-item");
+  picturesInCarousel.forEach((e) => {
+    e.classList.remove("active");
+    if (e.id === chosenPicture) {
+      e.classList.add("active");
+    }
+  });
   projectsGallery.classList.toggle("pictures-off");
   carousel.classList.toggle("pictures-off");
   fogOnButton.classList.toggle("fog-off");
