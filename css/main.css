@@ -330,6 +330,7 @@ a.dropdown-item:hover, a.dropdown-item:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #111111;
   width: 100%;
   padding: 2em;
   background-color: #dcc1ab;
@@ -526,6 +527,7 @@ a.dropdown-item:hover, a.dropdown-item:focus {
           align-items: center;
   min-height: 100vh;
   background-color: #F5F0EC;
+  color: #111111;
 }
 .offer__description {
   padding: 1em;
@@ -1130,6 +1132,8 @@ a.dropdown-item:hover, a.dropdown-item:focus {
   color: #1B5B31;
   padding: 0.5em 1em;
   border-radius: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 @media (min-width: 768px) {
@@ -1179,6 +1183,12 @@ a.dropdown-item:hover, a.dropdown-item:focus {
     margin: 2em 0;
     padding: 0.5em 1.5em;
   }
+  .instagram__item-two button:hover, .instagram__item-two button:focus {
+    outline: none;
+    background-color: #1B5B31;
+    border: 1px solid #F5F0EC;
+    color: #F5F0EC;
+  }
 }
 .footer {
   display: -webkit-box;
@@ -1220,6 +1230,8 @@ a.dropdown-item:hover, a.dropdown-item:focus {
   color: #F5F0EC;
   padding: 0.5em 1em;
   border-radius: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .footer__section-one .box-two {
   padding: 2em;
@@ -1293,6 +1305,11 @@ a.dropdown-item:hover, a.dropdown-item:focus {
     padding: 0.5em 1.5em;
     margin: 0;
     margin-left: 50px;
+  }
+  .footer__section-one .box-one button:hover, .footer__section-one .box-one button:focus {
+    outline: none;
+    background-color: #F5F0EC;
+    color: #1B5B31;
   }
   .footer__section-one .box-two {
     display: -webkit-box;
