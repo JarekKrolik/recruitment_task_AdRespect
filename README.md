@@ -6,3 +6,7 @@
 ## Working application on website address:
 
 https://www.recruitment-task.omikronelektryk.pl/
+
+secondary address in case with hosting problems :
+
+https://www.recruitment-task.fiapoland.pl/
